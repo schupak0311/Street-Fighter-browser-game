@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Akronim&display=swap" rel="stylesheet">
+  <title>Street Fighter</title>
+</head>
+
+<body>
+
+  <div id="root">
+
+    <div class="logo-container">
+      <img src="./resources/logo.png" alt="Logo" class="logo">
+
+    </div>
+
+    <div class="how-to-use" id="htu">
+      <h3>- Click on fighter checkbox for choose the fighter</h3>
+      <h3>- Click on <span class="stats-word">Stats</span> button to get additional info about fighter</h3>
+      <h3>- Choose 2 fighters</h3>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div id="modal-content" class="modal-content">
+        <h4>Name: </h4>
+        <div id="nm"></div>
+        <!-- <input id="input-name"></input> -->
+        <h4>Health: </h4>
+        <div id="ht"></div>
+        <h4>Attack: </h4>
+        <div id="at"></div>
+        <h4>Defense: </h4>
+        <div id="df"></div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <div class="info" id="info">
+  </div>
+
+  <button class="btn-start" id="button">Start Fight</button>
+
+  <div id="loading-overlay">
+    <img src="resources/logo.png" />
+  </div>
+  <script src="dist/bundle.js"></script>
+</body>
+
+</html>

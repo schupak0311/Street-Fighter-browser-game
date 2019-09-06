@@ -1,0 +1,263 @@
+html,
+body {
+    height: 100%;
+    font-family: 'Akronim', cursive;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F6F6F6;
+
+}
+
+
+
+#root {
+    font-family: 'Akronim', cursive;
+    padding: 150px 0;
+    position: relative;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+.logo-container {
+    height: 148px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.how-to-use {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    /* margin: 8px 0; */
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    z-index: 100;
+    font-family: 'Akronim', cursive;
+    font-size: 20px;
+}
+
+
+
+.btn-start {
+    font-family: 'Akronim', cursive;
+    width: 10%;
+}
+
+
+
+.info {
+    font-family: 'Akronim', cursive;
+    padding: 200px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 10px; */
+    /* height: 100%;
+    width: 100%; */
+}
+
+.fighters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    flex-wrap: wrap;
+    padding: 0 15px;
+    transition: all .2s;
+    position: absolute;
+    margin-bottom: 100px;
+}
+
+.fighter {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 20px;
+    position: relative;
+}
+
+.hp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 5px;
+}
+
+@keyframes hit {
+    0% {
+        left: 68%;
+    }
+
+    25% {
+        left: 70%;
+    }
+
+    75% {
+        left: 66%;
+
+    }
+
+    100% {
+        left: 68%;
+
+    }
+
+}
+
+.fighter:hover {
+    box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+}
+
+.name {
+    align-self: center;
+    font-size: 21px;
+    margin-top: 20px;
+}
+
+.fighter-image {
+    height: 260px;
+}
+
+#loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.7);
+    visibility: hidden;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: #F6F6F6;
+    /* Fallback color */
+    background-color: rgba(246, 246, 246, 0.5);
+    /* Black w/ opacity */
+}
+
+.ko {
+    background-color: #F6F6F6;
+    display: flex;
+}
+
+.winner-info {
+    font-size: 15px;
+
+}
+
+.stats {
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.stats-word {
+    color: red;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #F6F6F6;
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    height: 200px;
+    /* opacity: 0.9; */
+}
+
+#nm {
+    position: absolute;
+    left: 21%;
+    top: 20%;
+    font-size: 20px;
+}
+
+#input-name {
+    position: absolute;
+    left: 40%;
+    top: 20%;
+}
+
+#ht {
+    position: absolute;
+    left: 22%;
+    top: 40%;
+    font-size: 20px;
+
+}
+
+#at {
+    position: absolute;
+    left: 22%;
+    top: 61%;
+    font-size: 20px;
+
+}
+
+#df {
+    position: absolute;
+    left: 24%;
+    top: 81%;
+    font-size: 20px;
+
+}
+
+#image {
+    height: 100px;
+    width: 300px;
+}
